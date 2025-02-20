@@ -1,0 +1,41 @@
+.footer {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;  
+    min-height: 209px;
+    text-align: center;
+}
+
+.footer__logo {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 210.32px;
+}
+
+.footer__text {
+    font-size: 24px;
+    max-width: 500px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
+    
+    .footer__text {
+        font-size: 16px;
+        width: 40%;
+    }
+    
+    .footer__logo {
+        margin-top: 20px;
+    }
+    
+}

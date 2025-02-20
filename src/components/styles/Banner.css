@@ -1,0 +1,34 @@
+.banner {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://s3-alpha-sig.figma.com/img/4706/e7dd/e270fc8fc902a1eb738458e7b29c1899?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=DRLD8nwXQcIg8HrkZad-sP73TJZncgTeJOIVMuumd55AJYba3-f7Y4bXWAPDCOPXjLJaKpYokknezBi2r66itJc2-H1L0aTR41I4p9-xGe8xe8qIP51v1Sx9QrsVSDfQZPUtE7~pNJaxC3mv0-hEvxHpZeQ9OOq3vGYp4fyZ~dAsrzDbIAB01VVQgsZJIF-FkM-1rbRIFabRCHmEJaEIzQ1JH9oqGipE-ptUUSd1~9t0qWjMG1K38dQOE0jJUUviBXG~e2XS43nPKq5c~8SP3RVNvASaNUGPEchMSKb4qzeiSKUfcM-ZIo~m7zYonks6vknYA~wsICDuzY4ej~coeQ__');
+    background-size: cover;
+    background-position: center;
+    height: 223px;
+    width: 90%;
+    border-radius: 1rem;
+    margin-bottom: 30px;
+    
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    height: 223px;
+}
+
+.banner__text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 2rem;
+    z-index: 1;
+} 
