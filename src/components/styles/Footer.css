@@ -6,7 +6,9 @@
     color: white;
     padding: 10px;  
     min-height: 209px;
+    width: 100%;
     text-align: center;
+    margin-top: 50px;
 }
 
 .footer__logo {

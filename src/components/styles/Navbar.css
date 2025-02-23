@@ -1,13 +1,12 @@
 .navbar {
     display: flex;
-    gap: 2rem;
-    align-items: center;
+    width: 90%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 30px;
     margin-top: 30px;
-    padding: 0 4rem;
+    box-sizing: border-box;
 }
 
 .navbar__logo {
@@ -18,15 +17,37 @@
 
 .navbar__menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 30%;
     list-style: none;
+    margin-left: 20px;
     text-decoration: none;
+    text-wrap: nowrap;
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
     margin: 1rem;
+    cursor: pointer;
+}
+
+a.active {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 862px) {
+    .navbar {
+        font-size: 12px;
+        font-weight: 500;
+        padding-right: 3rem;
+    }
+    
+    .navbar__logo {
+        height: 50px;
+        width: 145px;
+    }
+
+    .navbar a {
+        text-transform: uppercase;
+    }
 }
