@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    min-width: 375px;
+    max-width: 1440px;
+    margin: 0 auto; 
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.appartement__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    color: #FF6060;
+}
+
+.appartement__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.appartement__content__img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.appartement__content img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.appartement__content__header {
+    display: flex;
+}
+
+.appartement__content__title {
+    flex-grow: 1;
+}
+
+.appartement__content h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.appartement__content h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-top: 5px;
+}
+
+.appartement__content__owner {
+    margin-left: auto;
+}
+
+.appartement__content__owner__detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.appartement__content__owner__badge {
+    display: flex;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+
+.appartement__content h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 18px;
+    font-weight: 500;
+    text-wrap: wrap;
+}
+
+.appartement__content__tags {
+    display: flex;
+    font-size: 16px;
+    gap: 1rem;
+    font-weight: 400;
+    text-align: center;
+    text-wrap: nowrap;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+}   
+
+.appartement__content__tags span {
+    padding: 0.2em 2em;
+    background-color: #FF6060;
+    border-radius: 20px;
+}
+
+.appartement__content__owner__stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+}
+
+.appartement__content__owner__stars__on {
+    color: #FF6060;
+}
+
+.appartement__content__owner__stars__off {
+    color: #C4C4C4;
+}
+
+.appartement__content__info {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 30px;
+
+}
+
+.appartement__content__info__volet {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.appartement__content__info__volet h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    background-color: #FF6060;
+}
+
+.appartement__content__info__volet i {
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+}
+
+.appartement__content__info__volet p {
+    font-size: 18px;
+    z-index: -1;
+    font-weight: 400;
+    color: black;
+    text-align: left;
+    padding: 1rem;
+    margin-top: -5px;
+    background-color: #F6F6F673;
+}
+
+@media screen and (max-width: 862px) {
+
+    .appartement__content img {
+        max-height: 255px;
+    }
+
+    .appartement__content__header {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .appartement__content h1 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .appartement__content h2 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .appartement__content__tags {
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .appartement__content__owner {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        margin-top: 10px;
+    }
+
+    .appartement__content__owner__stars {
+        font-size: 20px;
+    }
+    
+    .appartement__content__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appartement__content__info__volet h4 {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .appartement__content__info__volet p {
+        font-size: 12px;
+    }
+
+
+}

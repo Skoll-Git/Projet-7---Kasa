@@ -3,9 +3,9 @@ import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import AppartGrid from '../components/AppartGrid'
 import Footer from '../components/Footer'
-import '../components/styles/App.css'
+import '../components/styles/Home.css'
 
-function App() {
+function Home() {
   return (
     <div className="app__container">
       <Navbar />
@@ -16,4 +16,4 @@ function App() {
   )
 }
 
-export default App
+export default Home

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router'
 
 function Appartement() {
   return (
-    <NavLink to={"/logement"} className='appart'> 
+    <NavLink to={"/AppartementPage"} className='appart'> 
       <h2 className='appart__title'>Titre de la location</h2>
     </NavLink>
   )
