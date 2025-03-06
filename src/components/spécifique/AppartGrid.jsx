@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import './styles/AppartGrid.css'
-import './styles/Appartement.css'
+import '../styles/AppartGrid.css'
+import '../styles/Appartement.css'
 import Appartement from './Appartement'
 
 
@@ -19,7 +19,7 @@ function AppartGrid() {
   return (
     <div className='Appart__Grid'>
         {appartements.map((appartements) => 
-          (<Appartement title={appartements.title} cover={appartements.cover} id={appartements.id} />)
+          (<Appartement title={appartements.title} key={appartements} cover={appartements.cover} id={appartements.id} />)
         )}
     </div>
   )

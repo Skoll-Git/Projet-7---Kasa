@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Banner from '../components/Banner'
-import AboutMenu from '../components/AboutMenu'
-import Footer from '../components/Footer'
+import Navbar from '../components/générique/Navbar'
+import Banner from '../components/générique/Banner'
+import AboutMenu from '../components/spécifique/AboutMenu'
+import Footer from '../components/générique/Footer'
 import '../components/styles/About.css'
 
 function About() {

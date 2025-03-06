@@ -13,17 +13,17 @@
 }
 
 
-@media screen and (max-width: 1276px) {
-    .grid {
+@media screen and (max-width: 1023px) {
+    .Appart__Grid {
         display: grid;
-        grid-template-columns: 40% 40%;
+        grid-template-columns: 45% 45%;
         justify-content: space-around;
     }
     
 }
 
-@media screen and (max-width: 862px) {
-    .grid {
+@media screen and (max-width: 767px) {
+    .Appart__Grid {
         display: flex;
         flex-direction: column;
         background-color: white;

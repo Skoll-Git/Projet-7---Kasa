@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/AboutMenu.css'
+import '../styles/AboutMenu.css'
 
 function AboutMenu() {
 
