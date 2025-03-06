@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/AppartementPage.css'
 import { useLocation } from 'react-router'
-import js from '@eslint/js'
+import AppartementDescriptionPanel from './AppartementDescriptionPanel'
 
 function AppartementData() {
 const location = useLocation()
@@ -63,22 +63,7 @@ if (selectedFlat== null) { return <div>Loading...</div> }
               </div>
           </div>
         </div>
-          <div className="appartement__content__info">
-            <div className="appartement__content__info__volet">
-                <h4>Description</h4>
-                <span><i className="fa-solid fa-chevron-down"></i></span>
-                <p>{selectedFlat.description}</p>
-            </div>
-            <div className="appartement__content__info__volet">
-                <h4>Équipements</h4>
-                <span><i className="fa-solid fa-chevron-down"></i></span>
-                <ul>
-                  {selectedFlat.equipments.map((equipment) => (
-                    <li key={equipment}>{equipment}</li>
-                  ))}
-                </ul>
-            </div>
-          </div>  
+        <AppartementDescriptionPanel selectedFlat={selectedFlat} />
     </div>
     </div>
   )

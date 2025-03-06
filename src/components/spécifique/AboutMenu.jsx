@@ -18,18 +18,19 @@ function AboutMenu() {
       {isContentVisible && <p className='volet__content'>test</p>}
       <div className='volet'>
         <h2>Respect</h2>
-        <div><img src="./public/arrow_back.png" alt="flèche direction haut" /></div>
+        <div><img src="./public/arrow_back.png" alt="flèche direction haut" onClick={showContent}/></div>
       </div>
       {isContentVisible && <p className='volet__content'>test</p>}
-
       <div className='volet'>
         <h2>Service</h2>
-        <div><img src="./public/arrow_back.png" alt="flèche direction haut" /></div>
+        <div><img src="./public/arrow_back.png" alt="flèche direction haut" onClick={showContent}/></div>
       </div>
+      {isContentVisible && <p className='volet__content'>test</p>}
       <div className='volet'>
         <h2>Sécurité</h2>
-        <div><img src="./public/arrow_back.png" alt="flèche direction haut" /></div>
+        <div><img src="./public/arrow_back.png" alt="flèche direction haut" onClick={showContent}/></div>
       </div>
+      {isContentVisible && <p className='volet__content'>test</p>}
     </div>
   )
 }
