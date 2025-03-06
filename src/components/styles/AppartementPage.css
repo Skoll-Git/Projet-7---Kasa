@@ -74,11 +74,12 @@ body {
     gap: 0.5rem;
 }
 
-.appartement__content__owner__badge {
+.appartement__content__owner__badge img {
     display: flex;
     height: 64px;
     width: 64px;
     border-radius: 50%;
+    margin-left: 10px;
     background-color: #C4C4C4;
 }
 
@@ -121,7 +122,9 @@ body {
 }
 
 .appartement__content__owner__stars__off {
-    color: #C4C4C4;
+    background-color: #C4C4C4;
+    background-clip: text;
+    color: transparent;
 }
 
 .appartement__content__info {
@@ -135,6 +138,8 @@ body {
 .appartement__content__info__volet {
     display: flex;
     position: relative;
+    flex-basis: 50%;
+    border-radius: 20px;
     flex-direction: column;
 }
 
@@ -164,7 +169,22 @@ body {
     text-align: left;
     padding: 1rem;
     margin-top: -5px;
+    border-radius: 20px;
+    line-height: 25.65px;
     background-color: #F6F6F673;
+}
+
+.appartement__content__info__volet ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #F6F6F673;
+    line-height: 25.65px;
+    margin-left: 20px;
 }
 
 @media screen and (max-width: 862px) {
@@ -222,6 +242,12 @@ body {
 
     .appartement__content__info__volet p {
         font-size: 12px;
+        font-weight: 400;
+    }
+
+    .appartement__content__info__volet ul {
+        font-size: 12px;
+        font-weight: 400;
     }
 
 

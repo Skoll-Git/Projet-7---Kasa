@@ -1,6 +1,6 @@
-.grid {
-    display: flex;
-    flex-basis: 30%;
+.Appart__Grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -15,7 +15,8 @@
 
 @media screen and (max-width: 1276px) {
     .grid {
-        display: flex;
+        display: grid;
+        grid-template-columns: 40% 40%;
         justify-content: space-around;
     }
     
