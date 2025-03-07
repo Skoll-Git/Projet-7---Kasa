@@ -7,7 +7,7 @@
     background-color: #FF6060;
     margin: 0 auto;
     margin-top: 20px;
-
+    box-sizing: border-box;
 }
 
 .volet h2 {
@@ -17,6 +17,64 @@
     margin-right: auto;
 }
 
-.volet img {
-    margin-right: 10px;
+.volet i {
+    margin-right: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.volet__content {
+    width: 75%;
+    z-index: -1;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25.65px;
+    margin-top: 10px;
+    text-align: justify;
+    max-height: 0;
+    background-color: #F6F6F673;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateY(-50px);
+    /* opacity: 0; */
+}
+
+.volet__content--visible {
+    max-height: 500px; /* Ajustez cette valeur en fonction de votre contenu */
+    transform: translateY(0);
+    opacity: 1;
+    padding: 1rem;
+    transition: max-height 0.3s ease-in, transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.rotate {
+    transition: transform 0.3s ease-out;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 767px) {
+    .volet {
+        width: 90%;
+        height: 40px;
+    }
+
+    .volet h2 {
+        font-size: 18px;
+    }
+
+    .volet i {
+        font-size: 20px;
+    }
+
+    .volet__content {
+        font-size: 14px;
+        width: 80%;
+    }
+    
 }

@@ -6,12 +6,14 @@ import Footer from '../components/générique/Footer'
 import '../components/styles/About.css'
 
 function About() {
+  const bannerImage = 'public/Image2.png'; // Remplacez par le chemin de votre image
+
   return (
     <div className='about__container'>
       <Navbar />
-      <Banner />
+      <Banner backgroundImage={bannerImage} />
       <AboutMenu />
-      <Footer/>
+      <Footer />
     </div>
   )
 }
