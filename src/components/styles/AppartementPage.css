@@ -42,7 +42,6 @@ body {
 .appartement__content h2 {
     font-size: 18px;
     font-weight: 500;
-    color: black;
     margin-top: 5px;
 }
 
@@ -128,6 +127,8 @@ body {
     display: flex;
     position: relative;
     flex-basis: 50%;
+    color: black;
+    font-size: 18px;
     border-radius: 20px;
     flex-direction: column;
 }
@@ -144,9 +145,6 @@ body {
 .appartement__content__info__volet i {
     color: white;
     font-size: 32px;
-    position: absolute;
-    top: 0;
-    right: 0;
     padding: 0.5rem 1rem;
 }
 
@@ -170,6 +168,7 @@ body {
     font-weight: 400;
     color: black;
     margin-top: 10px;
+    padding: 10px;
     border-radius: 20px;
     background-color: #F6F6F673;
     line-height: 25.65px;
@@ -180,13 +179,14 @@ body {
     font-size: 12px;
     font-weight: 400;
     position: relative;
+    margin-left: -40%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
 
 .appartement__content__info__data--visible {
-    max-height: 500px;
+    max-height: 600px;
     transition: max-height 0.3s ease-in;
 }
 

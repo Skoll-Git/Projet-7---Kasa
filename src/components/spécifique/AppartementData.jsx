@@ -9,8 +9,6 @@ import AppartementBanner from './AppartementBanner'
 function AppartementData() {
 const location = useLocation()
 const [selectedFlat, setSelectedFlat] = useState(null);
-// const [firstName, setFirstName] = useState("");
-// const [lastName, setLastName] = useState("");
 
 useEffect(() => {
   fetchAppartementData();
@@ -24,8 +22,6 @@ function fetchAppartementData() {
    setSelectedFlat(flat);
    if (flat && flat.host && flat.host.name) {
     const [firstName, lastName] = flat.host.name.split(" ");
-    // setFirstName(firstName);
-    // setLastName(lastName);
   }
   }) 
   .catch(console.error);
